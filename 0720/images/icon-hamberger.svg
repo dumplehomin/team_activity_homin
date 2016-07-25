@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="25" viewBox="0 0 33 25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="icon-hamberger" class="cls-1" d="M37,229H70v3.125H37V229Zm0,10.937H70v3.126H37v-3.126Zm0,10.938H70V254H37v-3.125Z" transform="translate(-37 -229)"/>
+</svg>

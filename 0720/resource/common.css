@@ -1,0 +1,47 @@
+html {
+  font-size: 10px;
+}
+
+body *, body *::before, body *::after {
+  box-sizing: border-box;
+}
+
+ul,ol {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*이미지 하단에 공백을 형성하여 옆으로 
+배치되는 글들이 동일한 공간을 가질 수 있도록 설정*/
+.blank-bottom-img img + *,
+img.blank-bottom + * {
+  overflow: hidden;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.micro-clearfix::before, 
+.micro-clearfix::after {
+  content: "";
+  display: table;
+}
+
+.micro-clearfix::after {
+  clear: both;
+}
+
+/*ie6, ie7 대응 코드*/
+.lt-ie8 .clearfix,
+.lt-ie8 .micro-clearfix {
+  zoom: 1;
+}

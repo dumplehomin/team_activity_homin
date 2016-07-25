@@ -1,0 +1,103 @@
+html, body {
+	width: 100%;
+	height: 120%;
+}
+body {
+	background-image: linear-gradient(to bottom, 
+		rgba(146,131,242,1) 0%,
+		rgba(114,102,212,1) 50%,
+		rgba(92,81,188,1) 100%);
+
+	font-family:'BM JUA','배달의민족 주아',sans-serif;
+}
+
+.poster-set {
+	/*box-sizing: border-box;*/
+
+	width: 35.6%;
+	position: absolute;
+	top: 0; left: 0;
+	top: 10%; left: 0; right: 0;
+	margin: auto;
+	
+
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 3.5%;
+	padding-bottom: 26.75%;
+	
+	background-color: #fff;
+}
+
+.poster-set h1 {
+	font-size: 8vw;
+	text-align: justify;
+    text-align-last: justify;
+}
+
+.poster-set h1 span {
+	display: inline-block;
+	transform-origin: center bottom;
+	transform: scaleY(0);
+	animation: txt1 .7s forwards;
+	/*animation: txt1 .8s infinite;*/
+}
+
+.poster-set h1 .txt1 {
+	animation-delay: .2s;
+}
+
+.poster-set h1 .txt2 {
+	animation-delay: .3s;
+}
+
+.poster-set h1 .txt3 {
+	animation-delay: .4s;
+}
+
+.poster-set h1 .txt4 {
+	animation-delay: .5s;
+}
+
+.poster-set h1 .txt5 {
+	animation-delay: .6s;
+}
+
+.poster-set h1 .txt6 {
+	animation-delay: .7s;
+}
+
+@keyframes txt1 {
+    0% { transform: scaleY(0.0); }
+    10% { transform: scaleY(0.2); }
+    20% { transform: scaleY(0.6); }
+    30% { transform: scaleY(0.8); }
+    40% { transform: scaleY(1.2); }
+    50% { transform: scaleY(1); }
+    60% { transform: scaleY(0.9); }
+    70% { transform: scaleY(0.8); }
+    80% { transform: scaleY(0.9); }
+    100% { transform: scaleY(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
