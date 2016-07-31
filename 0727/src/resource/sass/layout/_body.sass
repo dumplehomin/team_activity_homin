@@ -1,0 +1,18 @@
+// +layout( $moblie_column_gutter )
+
+body
+	// +container( $mobile_grid_width )
+	background-image: url("../images/mobile_guide.png")
+	background-position: top center
+	height: 300vh
+	margin-top: 6rem
+
++breakpoint( $breakpoint_tablet )
+	+layout( 12 0.13333333333/1 )
+	body
+		+container( 92.708333333% )
+		background-color: red
+
++breakpoint( $breakpoint_desktop )
+	body
+		background-color: blue

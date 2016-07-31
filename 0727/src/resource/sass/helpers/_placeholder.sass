@@ -1,0 +1,91 @@
+%content_empty
+	content: ""
+
+%display_block
+	display: block
+
+%display_none
+	display: none
+
+%display_inline_block
+	display: inlin-block
+
+%display_inline
+	display: inlin
+
+%width_100
+	width: 100%
+
+%width_100vw
+	width: 100vw
+
+%clearfix
+	@extend %content_empty
+	@extend %display_block
+	clear: both
+
+%float_left
+	float: left
+
+%float_right
+	float: right
+
+%margin_0_auto
+	margin: 0 auto
+
+%bg-color_#fff
+	background-color: #fff
+
+%bg-color_#000
+	background-color: #000
+
+%bg-position_center
+	background-position: center
+
+%bg_repeat
+	background-repeat: repeat
+
+%color_#fff
+	color: #fff
+
+%color_#000
+	color: #000
+
+%color_off
+	color: transparent
+
+%position_relative
+	position: relative
+
+%position_absolute
+	position: absolute
+
+%position_fixed
+	position: fixed
+
+%z-index_0
+	z-index: 0
+
+%top_0
+	top: 0
+
+%bottom_0
+	bottom: 0
+
+%left_0
+	left: 0
+
+%right_0
+	right: 0
+
+%text_uppercase
+	text-transform: uppercase
+
+%cursor_pointer
+	cursor: pointer
+
+%text_off
+	@extend %width_100
+	@extend %color_off
+	@extend %position_absolute
+	@extend %z-index_0
