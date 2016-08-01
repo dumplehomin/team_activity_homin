@@ -1,6 +1,8 @@
+//Pseudo---------------------------------------------------------
 %content_empty
 	content: ""
 
+//layout  ---------------------------------------------------------
 %display_block
 	display: block
 
@@ -8,16 +10,10 @@
 	display: none
 
 %display_inline_block
-	display: inlin-block
+	display: inline-block
 
 %display_inline
-	display: inlin
-
-%width_100
-	width: 100%
-
-%width_100vw
-	width: 100vw
+	display: inline
 
 %clearfix
 	@extend %content_empty
@@ -30,9 +26,23 @@
 %float_right
 	float: right
 
+//size  ---------------------------------------------------------
+%width_100
+	width: 100%
+
+%width_100vw
+	width: 100vw
+
+%height_100
+	height: 100%
+
 %margin_0_auto
 	margin: 0 auto
 
+%margin_auto
+	margin: auto
+
+//bg  ---------------------------------------------------------
 %bg-color_#fff
 	background-color: #fff
 
@@ -45,6 +55,7 @@
 %bg_repeat
 	background-repeat: repeat
 
+//color  ---------------------------------------------------------
 %color_#fff
 	color: #fff
 
@@ -54,6 +65,7 @@
 %color_off
 	color: transparent
 
+//position  ---------------------------------------------------------
 %position_relative
 	position: relative
 
@@ -78,14 +90,54 @@
 %right_0
 	right: 0
 
+%top_50
+	top: 50%
+
+%bottom_50
+	bottom: 50%
+
+%left_50
+	left: 50%
+
+%right_50
+	right: 50%
+
+%position_width_center
+	@extend %position_absolute
+	@extend %left_0
+	@extend %right_0
+	@extend %margin_0_auto
+
+//overflow  ---------------------------------------------------------	
+%overflow_hidden
+	overflow: hidden
+//text  ---------------------------------------------------------
 %text_uppercase
 	text-transform: uppercase
 
-%cursor_pointer
-	cursor: pointer
+%text_capitalize
+	text-transform: capitalize
+
+%text-align_center
+	text-align: center
 
 %text_off
 	@extend %width_100
 	@extend %color_off
 	@extend %position_absolute
 	@extend %z-index_0
+
+%offscreen
+	@extend %position_absolute
+	@extend %overflow_hidden
+	height: 1px
+	width: 1px
+	clip: rect(1px,1px,1px,1px)
+	word-break: initial
+	word-wrap: initial
+%ir
+	@extend %overflow_hidden
+	text-indent: -99999em
+//cursor  ---------------------------------------------------------
+%cursor_pointer
+	cursor: pointer

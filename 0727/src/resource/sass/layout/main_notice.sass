@@ -1,0 +1,45 @@
+$menu_list_img: "#{$img_url}menu_list_img1.jpg", "#{$img_url}menu_list_img2.jpg", "#{$img_url}menu_list_img3.jpg"
+
+.main_notice
+	@extend %bg-color_#fff
+	@extend %position_relative
+	border-top-left-radius: 7px
+	border-top-right-radius: 7px
+	z-index: 1
+
+	section
+		padding-top: 8px
+
+		h3
+			@extend %font_amazone_bt
+			@extend %text-align_center
+			@extend %font_color_#e52020
+			font-size: 21px
+
+.menu_list
+	+layout( $moblie_column_gutter )
+	+container( $mobile_grid_width )
+	margin-top: 23px
+
+	&::after
+		@extend %clearfix
+
+	li
+		@extend %overflow_hidden
+		@extend %ir
+		@extend %float_left
+		width: 90px
+		height: 90px
+		border-radius: 45px
+		border: 2px solid #cdcdcd
+		
+		@for $i from 1 through length( $menu_list_img )
+			&:nth-child( #{$i} )
+				background-image: url( nth($menu_list_img, $i) )
+				@if $i == 2
+					@extend %position_width_center
+	
+	li:last-child
+		@extend %float_right
+		background-position-y: -40px
+

@@ -1,0 +1,120 @@
+.main_carousel
+	@extend %position_relative
+	z-index: 0
+
+.carousel_wrap
+	@extend %position_relative
+	background-image: url("../images/carousel_wrap_bg_item1.png"), url("../images/carousel_wrap_bg_item2.png"), url("../images/carousel_wrap_bg_item3.png"), url("../images/carousel_wrap_bg_item4.png"), url("../images/carousel_wrap_bg_item5.png"), url("../images/carousel_wrap_bg_item6.png"), url("../images/carousel_wrap_bg.gif")
+	background-position: 87% 6.25%, 10% 20%, 55% 55%, 20% 80%, 35% 130%, 90% 90%, center
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, repeat
+	height: 18rem
+
+	.carousel_btns
+		@extend %position_absolute
+		@extend %width_100
+		@extend %text-align_center
+		bottom: 15px
+		z-index: 120
+		li
+			@extend %display_inline_block
+			margin: 0 4px
+
+			button
+				@extend %cursor_pointer
+				@extend %bg-color_#fff
+				width: 15px
+				height: 15px
+				border: 1px solid #ddd
+				border-radius: 13px
+
+				&:hover, &:focus
+					border: 1px solid transparent
+					background-color: #ffc000
+
+				span
+					@extend %offscreen
+
+	&::before, &::after
+		@extend %content_empty
+		@extend %position_absolute
+		@extend %cursor_pointer
+		@extend %bg-position_center
+		top: 34%
+		width: 45px
+		height: 65px
+		border: 1px solid #970509	
+		background-image: url("../images/carousel_wrap_btn.png"),linear-gradient(to bottom, #ed1c24 0%, #dc0810 100%)
+		background-repeat: no-repeat, repeat
+		z-index: 110
+	&::before
+		@extend %left_0
+		transform: rotateY( 180deg )
+	&::after
+		@extend %right_0
+
+	.carousel_list
+		@extend %height_100
+		li
+			@extend %height_100
+			@extend %position_relative
+			@extend %font_katy_berry
+			@extend %font_color_#e52020
+			font-size: 70px
+			p
+				@extend %position_absolute
+				@extend %width_100
+				@extend %height_100
+				@extend %top_50
+				@extend %text-align_center
+				transform: translateY( -50% )
+				z-index: 100
+
+				span
+					@extend %left_50
+					@extend %right_50
+					@extend %position_absolute
+					-webkit-text-stroke: 10px #fff
+					text-stroke: 10px #fff
+					width: 175px
+					&.txt1
+						top: 75px
+						transform: translateX(-59%)
+					&.txt2
+						bottom: 60px
+						transform: translateX(-34%)
+					&.txt1::before, &.txt2::before
+						@extend %position_absolute
+						-webkit-text-stroke: 0px #fff
+						text-stroke: 0px #fff
+					&.txt1::before
+						content: "Delicious!"
+					&.txt2::before
+						content: "Pizzeria"
+
+			img
+				@extend %position_absolute
+				@extend %left_0
+				@extend %right_0
+				@extend %top_0
+				@extend %bottom_0
+				@extend %margin_auto
+
+			.item1
+				left: -43.75%
+				top: 17.3611%
+			.item2
+				right: -48.4375%
+				bottom: -92.0138%
+			.item3
+				right: -53.125%
+				bottom: 50.3472%
+
+
+
+
+
+
+
+
+
+
