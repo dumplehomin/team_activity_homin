@@ -33,3 +33,20 @@
 	margin-left: $left;
 	margin-right: $righ;
 }
+
+@mixin font-shorthand(
+	$fz: null,
+	$ff: null,
+	$lh: 1.5,
+	$etc: null
+){
+	@if $fz == null or $ff == null {
+		@error "font"
+	}
+
+	font: $etc $etc _fontShortHand( $fz, $lh ) $ff
+}
+
+@mixin font( $args... ){
+	@include font-shorthand( $args... );
+}

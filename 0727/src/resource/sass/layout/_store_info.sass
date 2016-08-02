@@ -1,0 +1,57 @@
+.store_info
+	@extend %position_relative
+	@extend %bg_repeat
+	@extend %bg-position_center
+	// padding-bottom: 23px
+	z-index: 2
+	background-image: url("../images/store_info_bg.gif")
+
+	&::before
+		@extend %content_empty
+		@extend %position_width_center
+		width: 57px
+		height: 49px
+		top: -5px
+		background-image: url("../images/store_info_riborn.png")
+	section
+		padding-top: 2.5rem
+		padding-bottom: 23px
+		color: #954f20
+
+		h3
+			@extend %position_relative
+			font-size: 22px
+			margin-bottom: 22px
+
+			&::before
+				@extend %content_empty
+				@extend %position_width_center
+				width: 16px
+				height: 17px
+				bottom: -15px
+				background-image: url("../images/store_info_h3_lt.png")
+
+		article
+			@extend %text-align_center
+			border: 1px solid #ac6e3d
+			border-radius: 3px
+			padding-top: 15px
+			padding-bottom: 11px
+			margin-bottom: 23px
+
+			& *
+				@extend %display_block
+				font-size: 17px
+				line-height: 1
+				color: #954f20
+
+			h4
+				@extend %text_uppercase
+				font-size: 18px
+				margin-bottom: 14px
+			time
+				margin-bottom: 10px
+
+			&:last-child
+				margin-bottom: 0
+				

@@ -1,8 +1,19 @@
 .page_content
 	h2
 		@extend %text_off
+
+	article.main_notice, article.store_info
+		section
+			+layout( $moblie_column_gutter )
+			+container( $mobile_grid_width )
+			h3
+				@extend %font_amazone_bt
+				@extend %text-align_center
 @import carousel_wrap
 @import main_notice
+@import event_news
+@import event_notice
+@import store_info
 
 
 

@@ -5,20 +5,17 @@ $menu_list_img: "#{$img_url}menu_list_img1.jpg", "#{$img_url}menu_list_img2.jpg"
 	@extend %position_relative
 	border-top-left-radius: 7px
 	border-top-right-radius: 7px
+	padding-bottom: 47px
 	z-index: 1
 
 	section
 		padding-top: 8px
 
-		h3
-			@extend %font_amazone_bt
-			@extend %text-align_center
+		h3			
 			@extend %font_color_#e52020
 			font-size: 21px
 
 .menu_list
-	+layout( $moblie_column_gutter )
-	+container( $mobile_grid_width )
 	margin-top: 23px
 
 	&::after
@@ -37,9 +34,31 @@ $menu_list_img: "#{$img_url}menu_list_img1.jpg", "#{$img_url}menu_list_img2.jpg"
 			&:nth-child( #{$i} )
 				background-image: url( nth($menu_list_img, $i) )
 				@if $i == 2
-					@extend %position_width_center
-	
+					@extend %position_width_center	
 	li:last-child
 		@extend %float_right
 		background-position-y: -40px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
